@@ -3,7 +3,6 @@ package com.conversor.challenger;
 import javax.swing.*;
 
 
-
 public class MenuConversor extends JFrame {
     private JPanel menu;
     private JComboBox opcionConversiones;
@@ -18,9 +17,9 @@ public class MenuConversor extends JFrame {
                 monedas.iniciarConversorMonedas();
                 menu.setVisible(false);
                 dispose();
-            } else {
-                JOptionPane.showInputDialog(null, Index.user.toUpperCase() + ", Ingresa la temperatura que deseas convertir:",
-                        "Conversor de dinero", JOptionPane.QUESTION_MESSAGE);
+            } else{
+                JOptionPane.showMessageDialog(null, Index.user.toUpperCase() + ", Muy pronto añadiremos esta nueva funcionalidad.",
+                        "¡Oops!", JOptionPane.INFORMATION_MESSAGE);
             }
         });
     }
